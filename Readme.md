@@ -19,40 +19,7 @@ A aplicação busca dados atualizados, treina um modelo de regressão logística
 * **Web Scraping:** Cloudscraper & Requests  
 * **Dados Históricos:** Arquivo CSV local
 
-## **Como Executar o Projeto**
-
-Siga os passos abaixo para executar a aplicação em sua máquina local.
-
-### **1\. Pré-requisitos**
-
-* Python 3.8 ou superior instalado.  
-* pip (gerenciador de pacotes do Python).
-
-### **2\. Instalação**
-
-**a. Clone o repositório (opcional):**
-
-git clone \<https://github.com/vinisik/bot\_fut.git\>  
-cd \<bot\_fut\>
-
-**b. Crie e ative um ambiente virtual:**
-
-\# Windows  
-python \-m venv .venv  
-.\\.venv\\Scripts\\activate
-
-\# macOS / Linux  
-python3 \-m venv .venv  
-source .venv/bin/activate
-
-c. Instale as dependências:  
-O arquivo requirements.txt contém todas as bibliotecas necessárias.  
-pip install \-r requirements.txt
-
-### **3\. Executando a Aplicação**
-
-Com o ambiente virtual ativado e as dependências instaladas, inicie o servidor do Streamlit com o seguinte comando:
-
+## Executar o sreamlit
 streamlit run app.py
 
 ### **Dados a Serem Armazenados no Banco de Dados:**
