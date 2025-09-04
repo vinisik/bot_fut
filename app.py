@@ -49,7 +49,7 @@ def carregar_dados_e_modelo():
  lista_times, df_total) = carregar_dados_e_modelo()
 
 # Interface do Usuário 
-st.title("FUTBot: Previsões do Brasileirão 2025")
+st.title("FUTBot: Estatísticas do Brasileirão 2025")
 
 st.sidebar.header("Menu de Opções")
 menu_escolha = st.sidebar.radio(
@@ -103,7 +103,7 @@ if df_resultados is not None and modelo is not None:
     # Confronto Direto        
     elif menu_escolha == "Confronto Direto":
         st.header("Confronto Direto")
-        st.markdown("Analise o histórico completo de partidas entre dois clubes, incluindo vitórias, empates e gols.")
+        st.markdown("Analise o histórico completo de partidas entre dois clubes, incluindo vitórias, empates e gols. + Histórico de Clássicos")
         
         col1, col2 = st.columns(2)
         with col1:
