@@ -10,7 +10,7 @@ from analysis import gerar_confronto_direto # Importa a análise de confronto di
 
 # Página
 st.set_page_config(
-    page_title="FUTBot | Previsão de Futebol",
+    page_title="FUTBot | Estatísticas do Brasileirão",
     page_icon="⚽",
     layout="wide"
 )

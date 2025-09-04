@@ -1,7 +1,7 @@
 pandas
 scikit-learn
 requests
-lxml
 numpy
-streamlit 
+streamlit
 cloudscraper
+lxml
