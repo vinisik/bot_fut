@@ -11,8 +11,10 @@ def buscar_dados_brasileirao(ano: str) -> Optional[pd.DataFrame]:
     print(f"Buscando dados da temporada {ano}...")
     url = f"https://fbref.com/en/comps/24/schedule/{ano}-Serie-A-Scores-and-Fixtures"
 
+    # Usar cloudscraper para contornar proteções anti-bot
     scraper = cloudscraper.create_scraper()
 
+    # Fazer a requisição para a página
     try:
         response = scraper.get(url, timeout=15)
         response.raise_for_status()

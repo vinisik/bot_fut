@@ -10,7 +10,7 @@ from analysis import gerar_confronto_direto # Importa a análise de confronto di
 
 # Página
 st.set_page_config(
-    page_title="FUTBot | Estatísticas do Brasileirão",
+    page_title="AtletiQ | Estatísticas do Brasileirão",
     page_icon="⚽",
     layout="wide"
 )
@@ -40,7 +40,7 @@ def carregar_dados_e_modelo():
 
     lista_times = sorted(list(set(df_total['HomeTeam']).union(set(df_total['AwayTeam']))))
     
-    st.success("Tudo pronto! Modelo treinado e dados de 2025 carregados.")
+    # st.success("Tudo pronto! Modelo treinado e dados de 2025 carregados.")
     return df_resultados, df_futuro, time_stats, modelo, encoder, colunas_modelo, lista_times, df_total
 
 # Carrega os dados cache
@@ -49,7 +49,7 @@ def carregar_dados_e_modelo():
  lista_times, df_total) = carregar_dados_e_modelo()
 
 # Interface do Usuário 
-st.title("FUTBot: Estatísticas do Brasileirão 2025")
+st.title("AtletiQ: Estatísticas do Brasileirão 2025")
 
 st.sidebar.header("Menu de Opções")
 menu_escolha = st.sidebar.radio(
